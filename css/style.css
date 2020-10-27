@@ -1,0 +1,53 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "SpaceGrotesk-SemiBold"; src: url("../fonts/SpaceGrotesk-SemiBold.otf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html {
+  letter-spacing: 1px;
+  -webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed Version, Currently */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+address { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 100px 15px; }
+.section-heading > h1 { color: #00a7a7; font: 7rem/1.2 "SpaceGrotesk-SemiBold"; margin-bottom: 100px; padding: 0 0 30px; position: relative; text-shadow: 2px 2px 2px #ccc; }
+.section-heading > h1::after { background-color: #00a7a7; bottom: 0; content: ""; height: 4px; left: 50%; position: absolute; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: 100px; }
+.section-heading > h1 > span { background-color: #fff; border: 4px solid #00a7a7; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; bottom: -8px; height: 20px; left: 50%; position: absolute; transform: translateX(-50%); width: 20px; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); z-index: 1; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Fancybox Gallery Section Starts -------*/
+
+.gallery-image-icon { overflow: hidden; position: relative; }
+.gallery-icon { background-color: #ffffff; height: 40px; left: 50%; line-height: 40px; opacity: 0; position: absolute; text-align: center; top: 45%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; visibility: hidden; width: 40px; }
+.gallery-icon > i { color: #007a77; font-size: 1.8rem; }
+.gallery-image-icon > img { -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 100%; }
+.gallery-image-icon:hover > img { -webkit-filter: brightness(50%); filter: brightness(50%); -webkit-transform: scale(1.2) rotate(7deg); -moz-transform: scale(1.2) rotate(7deg); -ms-transform: scale(1.2) rotate(7deg); -o-transform: scale(1.2) rotate(7deg); transform: scale(1.2) rotate(7deg); }
+.gallery-image-icon:hover > .gallery-icon { opacity: 1; top: 50%; visibility: visible; }
+.fancybox-thumbs__list a:before { border: 7px solid #007a77; }
+
+/*------- Fancybox Gallery Section Ends -------*/
