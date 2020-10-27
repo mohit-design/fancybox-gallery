@@ -3,7 +3,7 @@
 /*------- Common CSS Starts -------*/
 
 .container-fluid { padding: 15px; }
-.section-heading > h1 { font-size: 2.4rem; margin-bottom: 30px; }
+.section-heading > h1 { font-size: 3rem; margin-bottom: 30px; text-shadow: 1px 1px 1px #ccc; }
 
 /*------- Common CSS Ends -------*/
   
